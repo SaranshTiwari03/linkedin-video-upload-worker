@@ -1,0 +1,6 @@
+name = "linkedin-video-upload-worker"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+# Set your API_KEY secret via:
+# wrangler secret put API_KEY
