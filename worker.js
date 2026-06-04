@@ -232,7 +232,7 @@ async function uploadThumbnailIfNeeded(uploadThumbnail, thumbnailUrl, thumbnailU
       body: thumbnailBuffer
     });
 
-    if (!thumbnailUploadResponse.ok) throw new Error(`Thumbnail upload failed: ${uploadResponse.status}`);
+    if (!uploadResponse.ok) throw new Error(`Thumbnail upload failed: ${uploadResponse.status}`);
     return { success: true };
   } catch (e) {
     return { success: false, error: e.message };
